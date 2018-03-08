@@ -16,8 +16,8 @@
                }
                updateClock();
                function updateDate() {
-              var days = ['dimanche','lundi','mardi','mercredi','jeudi.','vendredi','samedi'];
-              var months=['janvier', 'février', 'mars', 'avril', 'mai','juin', 'juillet', 'août','septembre','octobre', 'novembre','décembre'];
+              var days = ['domingo','lunes','martes','miercoles','jueves.','viernes','sabado'];
+              var months=['enero', 'febrero', 'marzo', 'abril', 'mayo','junio', 'julio', 'agosto','septiembre','octubre', 'noviembre','diciembre'];
               var m = new Date();
               var dateString = (days[ m.getDay() ])  + " " +  ("0" + m.getDate()).slice(-2) + " " + (months[ m.getMonth() ])   + " " + m.getFullYear()               
                         document.getElementById('date').innerHTML = dateString;
